@@ -1,0 +1,1957 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WMW - World Minimum Wage in 2021</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
+	<style type="text/css">
+		head, html, section, footer{margin:0; margin-bottom: 0;
+			/*overflow-y: hidden;*/}
+		div{margin: 0; /*overflow-y: hidden;*/}
+		body{margin:0; overflow-y: hidden; cursor: none;}
+		html{background:#1A1A1A; scroll-behavior: smooth;}
+		a{display:block; width: 6vw; height: 5vh; z-index: 30;}
+		h1{color:#999999;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			text-align: left;
+			/*line-height: 5vh;*/
+			letter-spacing: -0.05vw;
+			/*margin-top: 4.8vh;*/
+			margin-right: 4vw;
+			margin-bottom: 0.5vw;}
+		h2{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 400;
+			font-size: 3.3vw;
+			text-align: right;
+			line-height: 6vh;
+			letter-spacing: 0vw;
+			/*margin-top: 0.5vh;*/
+			margin-right: 0vw;
+			margin-bottom: 0.5vw;}
+		h3{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 400;
+			font-size: 1.6vw;
+			text-align: left;
+			letter-spacing: -0.1vw;
+			width: 17vw;
+			/*margin-top: 3vh;*/
+			margin-left: 0vw;
+			margin-bottom: 0vw;}
+		h4{color:#11A79B;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 400;
+			font-size: 8vw;
+			text-align: center;
+			letter-spacing: -0.1vw;
+			width: 7.5vw;
+			margin-top: -3vh;
+			margin-left: 0vw;
+			margin-bottom: -1vw;}
+		h5{width: 3vw;}
+		h6{color:#11A79B;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 500;
+			font-size: 4vw;
+			text-align: left;
+			line-height: 8vh;
+			letter-spacing: -0.17vw;
+			/*margin-top: 0.5vh;*/
+			margin-right: 0vw;
+			margin-bottom: 0.5vw;}
+		.Text2{color:#CCCCCC;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+			font-size: 0.9vw;
+			text-align: left;
+			width: 25vw;
+			line-height: 3.4vh;
+			word-break: keep-all;
+			margin-right: 0vw;
+			margin-bottom: 0.5vw;}
+		footer{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 0.8vw;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			margin-top: 1vh;}
+
+		.scroll::-webkit-scrollbar{ display: none;}
+
+		#headerseoul{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			/*margin-bottom: 54vw;*/
+			width: 30vw;
+			z-index: 40;
+			 transition: .1s ease; opacity: 1;}
+		#headerseoul:hover{color:#F2F2F2; transition: .1s ease; opacity: 0.5;}
+		#headertokyo{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			/*margin-bottom: 54vw;*/
+			width: 30vw;
+			z-index: 40;
+			 transition: .1s ease; opacity: 1;}
+		#headertokyo:hover{color:#F2F2F2; transition: .1s ease; opacity: 0.5;}
+		#headerwashi{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			/*margin-bottom: 54vw;*/
+			width: 30vw;
+			z-index: 40;
+			 transition: .1s ease; opacity: 1;}
+		#headerwashi:hover{color:#F2F2F2; transition: .1s ease; opacity: 0.5;}
+		#headerpreto{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			/*margin-bottom: 54vw;*/
+			width: 30vw;
+			z-index: 40;
+			 transition: .1s ease; opacity: 1;}
+		#headerpreto:hover{color:#F2F2F2; transition: .1s ease; opacity: 0.5;}
+		#headerberlin{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			/*margin-bottom: 54vw;*/
+			width: 30vw;
+			z-index: 40;
+			 transition: .1s ease; opacity: 1;}
+		#headerberlin:hover{color:#F2F2F2; transition: .1s ease; opacity: 0.5;}
+		#headerparis{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			/*margin-bottom: 54vw;*/
+			width: 30vw;
+			z-index: 40;
+			 transition: .1s ease; opacity: 1;}
+		#headerparis:hover{color:#F2F2F2; transition: .1s ease; opacity: 0.5;}
+		#headerlondon{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			/*margin-bottom: 54vw;*/
+			width: 30vw;
+			z-index: 40;
+			 transition: .1s ease; opacity: 1;}
+		#headerlondon:hover{color:#F2F2F2; transition: .1s ease; opacity: 0.5;}
+		#headercanbe{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			/*margin-bottom: 54vw;*/
+			width: 30vw;
+			z-index: 40;
+			 transition: .1s ease; opacity: 1;}
+		#headercanbe:hover{color:#F2F2F2; transition: .1s ease; opacity: 0.5;}
+
+		.subheader{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 70vw;
+			width: 30vw;
+			z-index: 3;}
+		.logo{top: 3vh; left: 88vw;
+			width: 10vw;
+			z-index: 30;}
+
+		section{}
+		.row{/*width: 1500px; height: 440px;*/
+			margin:auto; margin-right: 0vw; margin-bottom: 0vh;
+			display: flex; align-items: flex-end;}
+		.marginright0{margin-right: 0vw;}
+		.margintop{margin-top: 9.5vh;}
+		.col-3{width: 32.5vw; margin: 0vh 0.5vw;}
+		.gap{margin: 1.4vh 1vw; justify-content: center;}
+
+
+		.absolutegraph{position: absolute;
+						top: 90vh; left: 1vw;
+						bottom: 0vh;
+						z-index: 7;}
+		.boxspace{margin: 0vh 0vw;}
+
+		#seoulImg{width:24vw; position: absolute; top: 12vh; left: 38vw;
+					max-width:100vw; height:auto;
+					transition: .2s ease;
+					filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));}
+		#seoulImg:hover{transform: /*translate(30vw)*/ rotate(20deg);
+						transition: .2s ease-in-out;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		@keyframes move {
+ 			from {left: 0vw;}
+  			to {left: 100vw;}
+			}
+		#tokyoImg{width:35vw; position: absolute; top: 15vh; left: 32vw;
+					max-width:100vw; height:auto;
+					transition: .2s ease;
+					filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));}
+		#tokyoImg:hover{transform: rotate(10deg);
+						transition: .2s ease;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#washiImg{width:45vw; position: absolute; top: 18vh; left: 29vw;
+					max-width:100vw; height:auto;
+					transition: .2s ease;
+					filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));}
+		#washiImg:hover{transform: rotate(10deg);
+						transition: .2s ease;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#pretoImg{width:30vw; position: absolute; top: 5vh; left: 35vw;
+					max-width:100vw; height:auto;
+					transition: .2s ease;
+					filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));}
+		#pretoImg:hover{transform: rotate(15deg);
+						transition: .2s ease;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#berlinImg{width:30vw; position: absolute; top: 5vh; left: 35vw;
+					max-width:100vw; height:auto;
+					transition: .2s ease;
+					filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));}
+		#berlinImg:hover{transform: rotate(15deg);
+						transition: .2s ease;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#parisImg{width:30vw; position: absolute; top: 5vh; left: 35vw;
+					max-width:100vw; height:auto;
+					transition: .2s ease;
+					filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));}
+		#parisImg:hover{transform: rotate(15deg);
+						transition: .2s ease;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#londonImg{width:30vw; position: absolute; top: 5vh; left: 35vw;
+					max-width:100vw; height:auto;
+					transition: .2s ease;
+					filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));}
+		#londonImg:hover{transform: rotate(15deg);
+						transition: .2s ease;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+		#canbeImg{width:30vw; position: absolute; top: 5vh; left: 35vw;
+					max-width:100vw; height:auto;
+					transition: .2s ease;
+					filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.6));}
+		#canbeImg:hover{transform: rotate(15deg);
+						transition: .2s ease;}
+		@keyframes rotate {
+  			from {transform: rotate(20deg);}
+  			to {transform: rotate(380deg);}
+				}
+
+
+		.flex{display: flex;}
+		.relative{position: relative;}
+		.sticky{position: sticky;}
+		.absolute{position:  absolute;}
+		.fixed{position: fixed;}
+		.z1{z-index: 1;}
+		.z50{z-index: 50;}
+		.z30{z-index: 30;}
+		.z20{z-index: 20;}
+		.outer{padding: 0vh 0vw;}
+		.inner{position: absolute;
+	  		bottom: 0vw; margin: 0vh 0vw; width: 32.5vw;}
+
+	  	.scrollbox{width: 800vw; height:100vh; display: flex;}
+	  	.seoulbox{width: 100vw; height:100vh; /*position: sticky; left: 0vw;*/}
+	  	.tokyobox{width: 100vw; height: 100vh; background: #1A1A1A;}
+	  	.washibox{width: 100vw; height:100vh;  background: #1A1A1A;}
+	  	.pretobox{width: 100vw; height:100vh;  background: #1A1A1A;}
+	  	.berlinbox{width: 100vw; height:100vh;  background: #1A1A1A;}
+	  	.parisbox{width: 100vw; height:100vh;  background: #1A1A1A;}
+	  	.londonbox{width: 100vw; height:100vh;  background: #1A1A1A;}
+	  	.canbebox{width: 100vw; height:100vh;  background: #1A1A1A;}
+
+	  	.tokyotoback{background: #11A79B;}
+	  	#washitoback{background: #11A79B;}
+	  	.back1A{background: #1A1A1A;}
+
+	  	#cursorseoul {width: 20vw; height: 6vh; display: none; z-index: 30;}
+	  	#cursortokyo {width: 20vw; height: 6vh; display: none; z-index: 30;}
+	  	#cursorwashi {width: 20vw; height: 6vh; display: none; z-index: 30;}
+	  	#cursorpreto {width: 20vw; height: 6vh; display: none; z-index: 30;}
+	  	#cursorberlin {width: 20vw; height: 6vh; display: none; z-index: 30;}
+	  	#cursorparis {width: 20vw; height: 6vh; display: none; z-index: 30;}
+	  	#cursorlondon {width: 20vw; height: 6vh; display: none; z-index: 30;}
+	  	#cursorcanbe {width: 20vw; height: 6vh; display: none; z-index: 30;}
+	  	.tokyo-in{margin-left: 2vw;}
+
+	  	#arrowBtn1{position: absolute; width: 5vw; top: 15vh; left: 93vw;}
+	  	#arrowBtn1:hover{opacity: 0.5;}
+	  	#arrowBtn2{position: absolute; width: 5vw; top: 15vh; left: 93vw;}
+	  	#arrowBtn2:hover{opacity: 0.5;}
+	  	#arrowBtn3{position: absolute; width: 5vw; top: 15vh; left: 93vw;}
+	  	#arrowBtn3:hover{opacity: 0.5;}
+	  	#arrowBtn4{position: absolute; width: 5vw; top: 15vh; left: 93vw;}
+	  	#arrowBtn4:hover{opacity: 0.5;}
+	  	#arrowBtn5{position: absolute; width: 5vw; top: 15vh; left: 93vw;}
+	  	#arrowBtn5:hover{opacity: 0.5;}
+	  	#arrowBtn6{position: absolute; width: 5vw; top: 15vh; left: 93vw;}
+	  	#arrowBtn6:hover{opacity: 0.5;}
+	  	#arrowBtn7{position: absolute; width: 5vw; top: 15vh; left: 93vw;}
+	  	#arrowBtn7:hover{opacity: 0.5;}
+	  	#arrowBtn8{position: absolute; width: 5vw; top: 15vh; left: 93vw;}
+	  	#arrowBtn8:hover{opacity: 0.5;}
+
+	  	.boxsticky{position: sticky; left: 0;
+	  				-webkit-position: sticky;}
+
+	  	.cursor div {
+			    display: block;
+			/*     display: none; */
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    animation: fadein 1s;
+			    --cursor-colour: #EE5864;
+			    z-index: 100;}
+
+		.cursor .dot {
+			    width:  0.8rem;
+			    height: 0.8rem;
+			    background-color: var(--cursor-colour);
+			    border-radius: 50%;
+			    pointer-events: none;
+			    transform: translate(-50%, -50%);
+			    transition: opacity 0.5s;
+			    transition: width .8s, height .8s;}
+
+		.cursor .circle {
+			    width: 3.5rem;
+			    height: 3.5rem;
+			    background-color: rgba(0,0,0,0);
+			    border: 1px solid var(--cursor-colour);
+			    border-radius: 50%;
+			    pointer-events: none;
+			    transform: translate(-50%, -50%);
+			    transition: opacity 0.2s;
+			    transition: width 0.2s , height 0.2s;}
+
+		div.cursor div span {position: absolute;
+			    top:-0.5em;
+			    left: .6em;
+			    width: 300px;
+
+			    font-size: 30pt;
+			    font-weight: 600;
+			    color: var(--cursor-colour);
+			    
+			    opacity: 0;
+			    transition: opacity 0.5s;
+			    z-index: 100;}
+
+		div.cursor div .visible {opacity: 1;}
+
+		.cursor .hide {opacity: 0;}
+
+		.cursor .dot-hover {background-color: var(--link-color);
+			    width: .6rem;
+			    height: .6rem;
+			    opacity: 0.8;}
+
+		.cursor .expand {width: 6rem;
+			    height: 6rem;}
+
+		.cursor .shrink {width: 2rem;
+			    height: 2rem;}
+
+		.cursor .fill {border: 2px solid var(--primary-color);}
+
+		@keyframes fadein {
+			    0% { opacity: 0; }
+			    25% { opacity: .5; }
+			    100% { opacity: 1; }
+
+	
+	</style>
+</head>
+<body class="scroll">
+	<div class="cursor">
+        <div class="dot"><span></span></div>
+        <div class="circle"></div>
+    </div>
+	<!--/상단 타이포, 로고-->
+	<section class="fixed" style="z-index: 300">
+			<!--/프로젝트 설명-->
+			<div class="subheader absolute">
+				<p>World Minimum Wage in 2021</p>
+				<p style ="font-family: 'Noto Sans', sans-serif; font-weight: 300;">세계 최저임금 비교</style></p>
+			</div>
+			<!--/로고-->
+			<a href="index.html" class="logo absolute">
+				<img src="logo.svg">
+			</a>
+
+	</section>
+
+	<!--/scroll-->
+	<section class="scrollbox">
+		<!--/seoul-->
+		<section class="seoulbox boxsticky">
+			<!--/seoul-->
+			<section>
+				<div id="headerseoul">SEOUL</div>
+				<!--/팝업창-->
+				<div id="cursorseoul">
+					<img src="seoulexp.svg">
+				</div>
+			</section>
+			<!--/arrow to tokyo-->
+			<section>
+				<div id="arrowBtn1">
+					<img src="arrowtokyo.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="SeoulText" style="padding-left: 31vw; opacity: 0;">
+					<h6>Minimum Hourly Wage<br>= A Cup of Coffee</h6>
+				</div>
+				<div id="SeoulText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">"아메리카노 나오셨습니다." 물건에 존칭을 붙이는 이 잘못된 말은, 한 때 최저시급보다 아메리카노 한 잔이 가격이 더 높아 SNS 상에서 최저시급을 받는 아르바이트생 사이에서 유행하던 말이다. 최저시급 도입 초기부터 유난히 최저시급과 커피 가격을 비교하는 일이 잦았다. 커피값은 한국에서 최저시급에 관한 준거가격을 상징한다. 2021년 현재는 커피 한 잔 값보다 최저시급이 더 높은 8,720원을 기록하고 있다. 2022년 최저시급은 9,160원으로 확정되며 매년 소폭 상승하고 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="seoulImg">
+					<img src="seoulimg.png" style="width: 100%">
+				</div> 
+			</section>
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.1.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4>₩</h4>
+										<h4 class="count_num"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>1.51% ↑
+										<br>₩440</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+
+
+		<!--/tokyo-->
+		<section class="tokyobox boxsticky back1A">
+			<!--/tokyo-->
+			<section>
+				<div id="headertokyo">TOKYO</div>
+				<!--/팝업창-->
+				<div id="cursortokyo">
+					<img src="tokyoexp.svg">
+				</div>
+			</section>
+			<!--/arrow to washington-->
+			<section>
+				<div id="arrowBtn2">
+					<img src="arrowtokyo.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="TokyoText" style="padding-left: 31vw; opacity: 0;">
+					<h6>A part-time job is<br>someone's job</h6>
+				</div>
+				<div id="TokyoText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">일본의 경우, 편의점 아르바이트로도 누군가에게 생활을 영위하는 직업이다. 일본의 길거리에서 쉽게 확인할 수 있는 아르바이트 구인광고를 보면 시급에 추가적으로 교통비를 지급한다. 또한, 대부분의 아르바이트는 최저임금의 최소 15% 최대 70% 정도를 더 지급한다. 일본의 최저임금은 물가상승률 및 성장률 등을 고려해 결정된다. 물가상승률이 높으면 소비자의 구매력이 저하되기 때문에 최저임금을 인상해야 한다는 압력이 강해진다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="tokyoImg">
+					<img src="tokyoimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.10.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4>¥</h4>
+										<h4 class="count_num2"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hreftokyo">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2 class="tokyo-in">3.1% ↑
+										<br>¥28</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+		</section>
+
+		<!--/washington-->
+		<section class="washibox boxsticky back1A">
+			<!--/washington-->
+			<section>
+				<div id="headerwashi">WASHINGTON,<br>D.C.</div>
+				<!--/팝업창-->
+				<div id="cursorwashi">
+					<img src="washiexp.svg">
+				</div>
+			</section>
+			<!--/arrow to pretoria-->
+			<section>
+				<div id="arrowBtn3">
+					<img src="arrowpreto.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="WashiText" style="padding-left: 31vw; margin-top: -2vh; opacity: 0;">
+					<h6 style="color: #F59D33">“15 dollars per hour"<br>New job search standards</h6>
+				</div>
+				<div id="WashiText2" style="padding-left: 40vw; margin-top: -13vh; opacity: 0;">
+					<p class="Text2">‘시간당 임금 15달러’는 미국 노동계에서 10년 이상 요구해온 오랜 목표였다. 현재 미국은 코로나 상황과 맞물리며 미국 노동자의 80%가 최소 15달러의 시급을 받게 되었다. 대형 마트나 음식점 등에서 일하는 저임금 노동자의 임금이 이른바 ‘아마존 효과’로 인해 오르고 있기 떄문이다. 미국에서 코로나19 사태 이후 경제 정상화가 빠르게 이뤄지고 있는 가운데 아마존이 직원 채용을 위해 시급을 대폭 올리면서 다른 기업들도 따라가야 하는 처지에 놓였다. 미국 내 채용 회사 조사에 따르면 현재 미국 구직자들은 시간당 15달러 이하 일자리는 거들떠보지도 않는다고 한다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="washiImg">
+					<img src="washiimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2022.3.30.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace" style="margin-left: 7vw">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #F59D33">$</h4>
+										<h4 class="count_num3" style="color: #F59D33"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefwashi">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>37% ↑
+										<br>$4.05</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+		<!--/pretoria-->
+		<section class="pretobox boxsticky back1A">
+			<!--/pretoria-->
+			<section>
+				<div id="headerpreto">PRETORIA</div>
+				<!--/팝업창-->
+				<div id="cursorpreto">
+					<img src="pretoexp.svg">
+				</div>
+			</section>
+			<!--/arrow to berlin-->
+			<section>
+				<div id="arrowBtn4">
+					<img src="arrowberlin.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="PretoText" style="padding-left: 31vw; opacity: 0;">
+					<h6 style="color: #7DC04F">Join the boycott<br>of South African tea</h6>
+				</div>
+				<div id="PretoText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">남아공 단일 최저임금법은 업종, 지역, 연령 등 구분없이 시급 21.69랜드를 최저임금으로 적용하고 있다. 예외적으로 농장근로자, 가사노동자, 확장된 공공사업 프로그램 참여 근로자의 최저임금은 별도의 기준에 따라 적용된다. 현재 남아공의 실업률은 매해 최고치를 기록하고 있어 남아공 고용시장 개선이 반드시 필요한 상황이다. 특히 낮은 보수를 받고 있는 농장근로자, 가사노동자들은 대부분 흑인으로 구성돼 있기 때문에 단일 최저임금제 시행을 통한 기본급 보장은 흑인 계층의 경제력 향상과 직결되어 있다고 볼 수 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="pretoImg">
+					<img src="pretoimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.1.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #7DC04F">R</h4>
+										<h4 class="count_num4" style="color: #7DC04F"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefpreto">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>4.48% ↑
+										<br>R0.93</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<!--/berlin-->
+		<section class="berlinbox boxsticky back1A">
+			<!--/pretoria-->
+			<section>
+				<div id="headerberlin">BERLIN</div>
+				<!--/팝업창-->
+				<div id="cursorberlin">
+					<img src="berlinexp.svg">
+				</div>
+			</section>
+			<!--/arrow to paris-->
+			<section>
+				<div id="arrowBtn5">
+					<img src="arrowparis.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="BerlinText" style="padding-left: 31vw; opacity: 0;">
+					<h6 style="color: #9A68EB">Join the boycott<br>of South African tea</h6>
+				</div>
+				<div id="BerlinText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">남아공 단일 최저임금법은 업종, 지역, 연령 등 구분없이 시급 21.69랜드를 최저임금으로 적용하고 있다. 예외적으로 농장근로자, 가사노동자, 확장된 공공사업 프로그램 참여 근로자의 최저임금은 별도의 기준에 따라 적용된다. 현재 남아공의 실업률은 매해 최고치를 기록하고 있어 남아공 고용시장 개선이 반드시 필요한 상황이다. 특히 낮은 보수를 받고 있는 농장근로자, 가사노동자들은 대부분 흑인으로 구성돼 있기 때문에 단일 최저임금제 시행을 통한 기본급 보장은 흑인 계층의 경제력 향상과 직결되어 있다고 볼 수 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="berlinImg">
+					<img src="berlinimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.7.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #9A68EB">€</h4>
+										<h4 class="count_num5" style="color: #9A68EB"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefberlin">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>1.05% ↑
+										<br>€0.1</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<!--/paris-->
+		<section class="parisbox boxsticky back1A">
+			<!--/paris-->
+			<section>
+				<div id="headerparis">PARIS</div>
+				<!--/팝업창-->
+				<div id="cursorparis">
+					<img src="parisexp.svg">
+				</div>
+			</section>
+			<!--/arrow to london-->
+			<section>
+				<div id="arrowBtn6">
+					<img src="arrowlondon.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="ParisText" style="padding-left: 31vw; opacity: 0;">
+					<h6 style="color: #9A68EB">Join the boycott<br>of South African tea</h6>
+				</div>
+				<div id="ParisText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">남아공 단일 최저임금법은 업종, 지역, 연령 등 구분없이 시급 21.69랜드를 최저임금으로 적용하고 있다. 예외적으로 농장근로자, 가사노동자, 확장된 공공사업 프로그램 참여 근로자의 최저임금은 별도의 기준에 따라 적용된다. 현재 남아공의 실업률은 매해 최고치를 기록하고 있어 남아공 고용시장 개선이 반드시 필요한 상황이다. 특히 낮은 보수를 받고 있는 농장근로자, 가사노동자들은 대부분 흑인으로 구성돼 있기 때문에 단일 최저임금제 시행을 통한 기본급 보장은 흑인 계층의 경제력 향상과 직결되어 있다고 볼 수 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="parisImg">
+					<img src="parisimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.10.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #9A68EB">€</h4>
+										<h4 class="count_num6" style="color: #9A68EB"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefparis">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>2.2% ↑
+										<br>€0.23</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<!--/london-->
+		<section class="londonbox boxsticky back1A">
+			<!--/london-->
+			<section>
+				<div id="headerlondon">LONDON</div>
+				<!--/팝업창-->
+				<div id="cursorlondon">
+					<img src="londonexp.svg">
+				</div>
+			</section>
+			<!--/arrow to canberra-->
+			<section>
+				<div id="arrowBtn7">
+					<img src="arrowcanbe.svg">
+				</div>
+			</section>
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="LondonText" style="padding-left: 31vw; opacity: 0;">
+					<h6 style="color: #9A68EB">Join the boycott<br>of South African tea</h6>
+				</div>
+				<div id="LondonText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">남아공 단일 최저임금법은 업종, 지역, 연령 등 구분없이 시급 21.69랜드를 최저임금으로 적용하고 있다. 예외적으로 농장근로자, 가사노동자, 확장된 공공사업 프로그램 참여 근로자의 최저임금은 별도의 기준에 따라 적용된다. 현재 남아공의 실업률은 매해 최고치를 기록하고 있어 남아공 고용시장 개선이 반드시 필요한 상황이다. 특히 낮은 보수를 받고 있는 농장근로자, 가사노동자들은 대부분 흑인으로 구성돼 있기 때문에 단일 최저임금제 시행을 통한 기본급 보장은 흑인 계층의 경제력 향상과 직결되어 있다고 볼 수 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="londonImg">
+					<img src="londonimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.4.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #9A68EB">£</h4>
+										<h4 class="count_num7" style="color: #9A68EB"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hreflondon">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.1.1.</h1>
+									<h2>2.2% ↑
+										<br>£0.19</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+	<!--/canberra-->
+		<section class="canbebox boxsticky back1A">
+			<!--/canberra-->
+			<section>
+				<div id="headercanbe">CANBERRA</div>
+				<!--/팝업창-->
+				<div id="cursorcanbe">
+					<img src="canbeexp.svg">
+				</div>
+			</section>
+
+			<!--/scroll 영역 오브젝트-->
+			<!--/Text-->
+				<div id="CanbeText" style="padding-left: 31vw; opacity: 0;">
+					<h6 style="color: #9A68EB">Join the boycott<br>of South African tea</h6>
+				</div>
+				<div id="CanbeText2" style="padding-left: 40vw; padding-top: 15vh; opacity: 0;">
+					<p class="Text2">남아공 단일 최저임금법은 업종, 지역, 연령 등 구분없이 시급 21.69랜드를 최저임금으로 적용하고 있다. 예외적으로 농장근로자, 가사노동자, 확장된 공공사업 프로그램 참여 근로자의 최저임금은 별도의 기준에 따라 적용된다. 현재 남아공의 실업률은 매해 최고치를 기록하고 있어 남아공 고용시장 개선이 반드시 필요한 상황이다. 특히 낮은 보수를 받고 있는 농장근로자, 가사노동자들은 대부분 흑인으로 구성돼 있기 때문에 단일 최저임금제 시행을 통한 기본급 보장은 흑인 계층의 경제력 향상과 직결되어 있다고 볼 수 있다.</p>
+				</div> 
+			<section class="row z50">
+				<!--/이미지-->
+				<div id="canbeImg">
+					<img src="canbeimg.png" style="width: 100%">
+				</div> 
+			<!--/하단 최저임금 인포-->
+			<section>
+				<section class="row absolutegraph z20">
+					<!--/인상날짜-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace">
+									<h1>Effective Date</h1>
+									<h2>2021.7.1.</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/최저임금-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="boxspace">
+									<h3>Minimum Wage</h3>
+									<div class="row">
+										<h4 style="color: #43B9DD">$</h4>
+										<h4 class="count_num8" style="color: #43B9DD"></h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--/인상률-->
+					<div class="col-3 outer">
+						<div class="inner">
+							<div class="gap">
+								<div class="row boxspace" id="hrefcanbe">
+									<h5></h5>
+									<h1 class="margintop">Rate of Increase
+										<br>- compared to 2020.7.1.</h1>
+									<h2>2.47% ↑
+										<br>¢49</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+	</section>
+
+
+		
+
+
+	</section>
+	<script type="text/javascript">
+		//헤더 따라다니기
+		$("#headerseoul").on({
+            mousemove: (e) => {
+                $("#cursorseoul").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX+10 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorseoul").show();
+            },
+            mouseout: (e) => {
+                $("#cursorseoul").hide();
+            }
+        });
+
+        $("#headertokyo").on({
+            mousemove: (e) => {
+                $("#cursortokyo").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-1530 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursortokyo").show();
+            },
+            mouseout: (e) => {
+                $("#cursortokyo").hide();
+            }
+        });
+
+        $("#headerwashi").on({
+            mousemove: (e) => {
+                $("#cursorwashi").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-3050 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorwashi").show();
+            },
+            mouseout: (e) => {
+                $("#cursorwashi").hide();
+            }
+        });
+
+        $("#headerpreto").on({
+            mousemove: (e) => {
+                $("#cursorpreto").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-4600 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorpreto").show();
+            },
+            mouseout: (e) => {
+                $("#cursorpreto").hide();
+            }
+        });
+
+        $("#headerberlin").on({
+            mousemove: (e) => {
+                $("#cursorberlin").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-6150 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorberlin").show();
+            },
+            mouseout: (e) => {
+                $("#cursorberlin").hide();
+            }
+        });
+
+        $("#headerparis").on({
+            mousemove: (e) => {
+                $("#cursorparis").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-7670 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorparis").show();
+            },
+            mouseout: (e) => {
+                $("#cursorparis").hide();
+            }
+        });
+
+        $("#headerlondon").on({
+            mousemove: (e) => {
+                $("#cursorlondon").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-9200 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorlondon").show();
+            },
+            mouseout: (e) => {
+                $("#cursorlondon").hide();
+            }
+        });
+
+
+        $("#headercanbe").on({
+            mousemove: (e) => {
+                $("#cursorcanbe").css({
+                      top: e.pageY+10 + "px",
+                    left: e.pageX-10750 + "px",
+                    position:"absolute"
+                })
+            },
+            mouseover: (e) => {
+                $("#cursorcanbe").show();
+            },
+            mouseout: (e) => {
+                $("#cursorcanbe").hide();
+            }
+        });
+
+
+
+
+		//오브젝트 소리
+		//SEOUL 커피잔
+		//seoulSnd.volume = 0.05;
+		//seoulSnd.currentTime = 0;
+
+       //function sound(){document.getElementById("seoulSnd").play();}
+       //function mute(){document.getElementById("seoulSnd").pause();}
+
+       //TOKYO 도시락 뚜겅
+		//tokyoSnd.volume = 0.05;
+		//tokyoSnd.currentTime = 0;
+
+       //function sound(){document.getElementById("tokyoSnd").play();}
+       //function mute(){document.getElementById("tokyoSnd").pause();}
+
+
+
+
+
+       //숫자 애니메이션
+       //SEOUL
+       $({ val : 0 }).animate({ val : 8720 }, {
+ 		 duration: 1000,
+ 		step: function() {
+    		var num = numberWithCommas(Math.floor(this.val));
+    		$(".count_num").text(num);},
+  		complete: function() {
+   			var num = numberWithCommas(Math.floor(this.val));
+    		$(".count_num").text(num);}
+		});
+
+       	function numberWithCommas(x) {
+   			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
+
+   		//TOKYO
+   		$({ val : 0 }).animate({ val : 1041 }, {
+ 		 duration: 1000,
+ 		step: function() {
+    		var num = numberWithCommas(Math.floor(this.val));
+    		$(".count_num2").text(num);},
+  		complete: function() {
+   			var num = numberWithCommas(Math.floor(this.val));
+    		$(".count_num2").text(num);}
+		});
+
+       	function numberWithCommas(x) {
+   			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
+
+   		//WASHINGTON
+   		$({ val : 0 }).animate({ val : 15 }, {
+ 		 duration: 1000,
+ 		step: function() {
+    		var num = numberWithCommas(Math.floor(this.val));
+    		$(".count_num3").text(num);},
+  		complete: function() {
+   			var num = numberWithCommas(Math.floor(this.val));
+    		$(".count_num3").text(num);}
+		});
+
+       	function numberWithCommas(x) {
+   			return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}
+
+   		//PRETORIA
+   		$({ val : 0 }).animate({ val : 21.69 }, {
+ 		 duration: 1000,
+ 		step: function() {
+    		var num = numberWithCommas(this.val.toFixed(2));
+    		$(".count_num4").text(num);},
+  		complete: function() {
+   			var num = numberWithCommas(this.val.toFixed(2));
+    		$(".count_num4").text(num);}
+		});
+
+		//BERLIN
+   		$({ val : 0 }).animate({ val : 9.6 }, {
+ 		 duration: 1000,
+ 		step: function() {
+    		var num = numberWithCommas(this.val.toFixed(1));
+    		$(".count_num5").text(num);},
+  		complete: function() {
+   			var num = numberWithCommas(this.val.toFixed(1));
+    		$(".count_num5").text(num);}
+		});
+
+		//PARIS
+   		$({ val : 0 }).animate({ val : 10.48 }, {
+ 		 duration: 1000,
+ 		step: function() {
+    		var num = numberWithCommas(this.val.toFixed(2));
+    		$(".count_num6").text(num);},
+  		complete: function() {
+   			var num = numberWithCommas(this.val.toFixed(2));
+    		$(".count_num6").text(num);}
+		});
+
+		//LONDON
+   		$({ val : 0 }).animate({ val : 8.91 }, {
+ 		 duration: 1000,
+ 		step: function() {
+    		var num = numberWithCommas(this.val.toFixed(2));
+    		$(".count_num7").text(num);},
+  		complete: function() {
+   			var num = numberWithCommas(this.val.toFixed(2));
+    		$(".count_num7").text(num);}
+		});
+
+		//CANBERRA
+   		$({ val : 0 }).animate({ val : 20.33 }, {
+ 		 duration: 1000,
+ 		step: function() {
+    		var num = numberWithCommas(this.val.toFixed(2));
+    		$(".count_num8").text(num);},
+  		complete: function() {
+   			var num = numberWithCommas(this.val.toFixed(2));
+    		$(".count_num8").text(num);}
+		});
+
+		/*$({ val : 0 }).animate({ val : 1.5 }, {
+ 		  duration: 1000,
+  		step: function() {
+    		var num = numberWithCommas(this.val.toFixed(1));
+    		$(".count_num2").text(num);},
+  		complete: function() {
+		    var num = numberWithCommas(this.val.toFixed(1));
+		    $(".count_num2").text(num);}
+		});
+
+		function numberWithCommas(x) {
+		    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");}*/
+
+       //마우스 휠-스크롤
+       //1번
+		/*scrollVert();
+		var scrollLeft=0;
+
+		function scrollVert() {
+		  $('html, body, section, *').off('mousewheel').mousewheel(function(e, delta) {
+		    this.scrollTop -= (delta * 40);
+		    e.preventDefault();
+		    setTimeout(function() {
+		      if ($(window).scrollTop() + $(window).height() == $(document).height())
+		        scrollHoriz();}, 0)});
+			}
+
+		function scrollHoriz() {
+		  $('html, body, section, *').off('mousewheel').mousewheel(function(e, delta) {
+		    this.scrollLeft -= (delta * 40);
+		    e.preventDefault();
+		    scrollLeft=this.scrollLeft
+		    setTimeout(function() {
+		      if (scrollLeft == 0) scrollVert();
+		    }, 0)
+		  });
+		}*/
+
+		//2번
+		/*$("#id").on('mousewheel',function(e){
+			var wheelDelta = e.originalEvent.wheelDelta;
+
+			if(wheelDelta > 0){
+				console.log("up");
+				$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+			}else{
+			console.log("down");
+				$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());}
+			});*/
+
+		//3번
+		$.fn.hasScrollBar = function() {
+	    return (this.prop("scrollWidth") == 0 && this.prop("clientWidth") == 0)
+	            || (this.prop("scrollWidth") > this.prop("clientWidth"));};
+	            // 좌우 스크롤이 있는지 없는지 여부 검사
+		function wheel(name){
+			$(name).on('mousewheel',function(e){
+	    	var hasScroll = $(this).hasScrollBar();
+	    	if(!hasScroll){ //스크롤이 없으면 그냥 일반 스크롤
+	    	}else{ //있으면 아래 스크롤 받는값을 없애고 좌우스크롤 
+	        	var wheelDelta = e.originalEvent.wheelDelta;
+	        	if(wheelDelta > 0){
+	            	$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());
+	        	}else{
+	            	$(this).scrollLeft(-wheelDelta + $(this).scrollLeft());}
+	    		}
+			});
+		}
+		$(function(){
+	    	wheel('html');});
+
+
+		//arrow로 스크롤 위치 이동
+		//to tokyo
+		$(document).ready(function(){
+		$('#arrowBtn1').click(function(){
+			var offset = $('.tokyobox').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+	        $('html').animate({scrollLeft : offset.left}, 300);});
+		});
+
+		//to washington
+		$(document).ready(function(){
+		$('#arrowBtn2').click(function(){
+			var offset = $('.washibox').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+	        $('html').animate({scrollLeft : offset.left}, 300);});
+		});
+
+		//to pretoria
+		$(document).ready(function(){
+		$('#arrowBtn3').click(function(){
+			var offset = $('.pretobox').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+	        $('html').animate({scrollLeft : offset.left}, 300);});
+		});
+
+		//to berlin
+		$(document).ready(function(){
+		$('#arrowBtn4').click(function(){
+			var offset = $('.berlinbox').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+	        $('html').animate({scrollLeft : offset.left}, 300);});
+		});
+
+		//to paris
+		$(document).ready(function(){
+		$('#arrowBtn5').click(function(){
+			var offset = $('.parisbox').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+	        $('html').animate({scrollLeft : offset.left}, 300);});
+		});
+
+		//to london
+		$(document).ready(function(){
+		$('#arrowBtn6').click(function(){
+			var offset = $('.londonbox').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+	        $('html').animate({scrollLeft : offset.left}, 300);});
+		});
+
+		//to canberra
+		$(document).ready(function(){
+		$('#arrowBtn7').click(function(){
+			var offset = $('.canbebox').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+	        $('html').animate({scrollLeft : offset.left}, 300);});
+		});
+
+		//to seoul
+		//$(document).ready(function(){
+		//$('#arrowBtn8').click(function(){
+		//	var offset = $('.seoulbox').offset(); //선택한 태그의 위치를 반환
+//
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+	    //    $('html').animate({scrollRight : offset.right}, 300);});
+		//});
+
+
+
+
+		$(window).on('mousewheel', function(e){ if(e.originalEvent.wheelDelta < 0) {
+			//scroll down
+			$('html, body').stop().animate({ scrollLeft : '+=505vw' },20);
+			}else {
+			//scroll up
+			$('html, body').stop().animate({ scrollLeft : '-=505vw' },20); }
+			//prevent page fom scrolling
+			return false; });
+
+		//스크롤에 따라 배경색
+		$(document).ready(function(){
+		$(window).scrollLeft(0);
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=700 ){
+					
+					$(".seoulbox").css({
+						background: "#11A79B"
+					});
+				}
+				else {
+					$(".seoulbox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+		});
+
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=2300 ){
+					$(".tokyobox").css({
+						background: "#11A79B"
+					});
+				}
+				else {
+					$(".tokyobox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=3900 ){
+					$(".washibox").css({
+						background: "#F59D33"
+					});
+				}
+				else {
+					$(".washibox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=5300 ){
+					$(".pretobox").css({
+						background: "#7DC04F"
+					});
+				}
+				else {
+					$(".pretobox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+		
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=7000 ){
+					$(".berlinbox").css({
+						background: "#9A68EB"
+					});
+				}
+				else {
+					$(".berlinbox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=8600 ){
+					$(".parisbox").css({
+						background: "#9A68EB"
+					});
+				}
+				else {
+					$(".parisbox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		$(window).scroll(function(){	
+		if( $(window).scrollLeft()>=10000 ){
+					$(".londonbox").css({
+						background: "#9A68EB"
+					});
+				}
+				else {
+					$(".londonbox").css({
+						background: "#1A1A1A"
+					});
+				}
+			});
+
+		//$(window).scroll(function(){	
+		//if( $(window).scrollLeft()>=13000 ){
+		//			$(".canbebox").css({
+		//				background: "#43B9DD"
+		//			});
+		//		}
+		//		else {
+		//			$(".canbebox").css({
+		//				background: "#1A1A1A"
+		//			});
+		//		}
+		//	});
+
+		//Seoul Text
+		$("#seoulImg").on({
+            mouseover: (e) => {
+                $("#SeoulText").show();
+                $("#SeoulText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-27vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#SeoulText").hide();
+                $("#SeoulText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#seoulImg").on({
+            mouseover: (e) => {
+                $("#SeoulText2").show();
+                $("#SeoulText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#SeoulText2").hide();
+                $("#SeoulText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Tokyo Text
+		$("#tokyoImg").on({
+            mouseover: (e) => {
+                $("#TokyoText").show();
+                $("#TokyoText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-27vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#TokyoText").hide();
+                $("#TokyoText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#tokyoImg").on({
+            mouseover: (e) => {
+                $("#TokyoText2").show();
+                $("#TokyoText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(28vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#TokyoText2").hide();
+                $("#TokyoText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+         //Washington Text
+		$("#washiImg").on({
+            mouseover: (e) => {
+                $("#WashiText").show();
+                $("#WashiText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-27vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#WashiText").hide();
+                $("#WashiText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#washiImg").on({
+            mouseover: (e) => {
+                $("#WashiText2").show();
+                $("#WashiText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(31vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#WashiText2").hide();
+                $("#WashiText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Preto Text
+		$("#pretoImg").on({
+            mouseover: (e) => {
+                $("#PretoText").show();
+                $("#PretoText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#PretoText").hide();
+                $("#PretoText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#pretoImg").on({
+            mouseover: (e) => {
+                $("#PretoText2").show();
+                $("#PretoText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(23vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#PretoText2").hide();
+                $("#PretoText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Berlin Text
+		$("#berlinImg").on({
+            mouseover: (e) => {
+                $("#BerlinText").show();
+                $("#BerlinText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#BerlinText").hide();
+                $("#BerlinText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#berlinImg").on({
+            mouseover: (e) => {
+                $("#BerlinText2").show();
+                $("#BerlinText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(23vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#BerlinText2").hide();
+                $("#BerlinText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Paris Text
+		$("#parisImg").on({
+            mouseover: (e) => {
+                $("#ParisText").show();
+                $("#ParisText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#ParisText").hide();
+                $("#ParisText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#parisImg").on({
+            mouseover: (e) => {
+                $("#ParisText2").show();
+                $("#ParisText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(23vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#ParisText2").hide();
+                $("#ParisText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //London Text
+		$("#londonImg").on({
+            mouseover: (e) => {
+                $("#LondonText").show();
+                $("#LondonText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#LondonText").hide();
+                $("#LondonText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#londonImg").on({
+            mouseover: (e) => {
+                $("#LondonText2").show();
+                $("#LondonText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(23vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#LondonText2").hide();
+                $("#LondonText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        //Canberra Text
+		$("#canbeImg").on({
+            mouseover: (e) => {
+                $("#CanbeText").show();
+                $("#CanbeText").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(-25vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#Canbeext").hide();
+                $("#CanbeText").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+        $("#canbeImg").on({
+            mouseover: (e) => {
+                $("#CanbeText2").show();
+                $("#CanbeText2").css({
+                      opacity: 1,
+                      position:"absolute",
+                      transform: "translate(23vw)",
+                      transition: "0.7s ease-in-out"
+                  })
+            	},
+            mouseout: (e) => {
+                $("#CanbeText2").hide();
+                $("#CanbeText2").css({
+                      opacity: 0,
+                      position:"absolute"
+                  })
+            	}
+        });
+
+
+        //커서
+        const cursorDot = document.querySelector(".cursor .dot");
+		const cursorCircle = document.querySelector(".cursor .circle");
+		const cursorText = document.querySelector(".cursor .dot span");
+		var touchDevice = false;
+		var hoverLink = false;
+
+		let currentX = 0, currentY = 0;
+		let aimX = 0, aimY = 0;
+		let speed = 0.15;
+
+		// document.body.classList.add("noCursor");
+		// cursorCircle.classList.remove("hide");
+		// cursorDot.classList.remove("hide");
+
+		const animate = () => {
+		    currentX += (aimX - currentX) * speed;
+		    currentY += (aimY - currentY) * speed;
+
+		    cursorCircle.style.left = currentX + "px";
+		    cursorCircle.style.top = currentY + "px";
+		    requestAnimationFrame(animate);
+		}
+
+		animate();
+
+		document.addEventListener("mousemove", (e) => {
+		    if (!touchDevice) {
+		        cursorDot.style.left = e.clientX + "px";
+		        cursorDot.style.top = e.clientY + "px";
+		    }
+		    if (!hoverLink) {
+		        aimX = e.clientX;
+		        aimY = e.clientY;
+		    }
+		});
+
+		document.addEventListener("touchend", (e) => { 
+		    touchDevice = true;
+		    cursorCircle.remove();
+		    cursorDot.remove();
+		    document.body.classList.remove("noCursor");
+		});
+
+	</script>
+</body>
+</html>

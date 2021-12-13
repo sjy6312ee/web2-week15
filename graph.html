@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WMW - World Minimum Wage in 2021</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+	<style type="text/css">
+		head, html, section, footer{margin:0;
+			}
+		div{margin: 0;}
+		body{margin:0; cursor: none;}
+		html{background:#1A1A1A;}
+		.scroll::-webkit-scrollbar{ display: none;}
+		a{display:block; width: 6vw; height: 5vh; z-index: 30;}
+		h1{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			text-align: left;
+			word-break: keep-all;
+			line-height: 0vh;}
+		h2{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1.3vw;
+			text-align: left;
+			word-break: keep-all;
+			line-height: 3vh;}
+		h4{color:#F2F2F2;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			text-align: left;
+			word-break: keep-all;
+			line-height: 2vh;}
+		footer{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 0.8vw;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			margin-top: 1vh;
+			margin: 3vw;
+			/*border-top: 0.01vw solid #F2F2F2;*/}
+		a{text-decoration: none;
+			width: auto; height: auto;}
+
+		.header{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 10.3vw;
+			margin-left: 2vw;
+			margin-top: 0.5vw;
+			line-height: 10vw;
+			letter-spacing: -0.4vw;
+			text-align: left;
+			margin-bottom: 1vw;
+			z-index: 5;}
+		.exchangerate{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 32vw;
+			z-index: 3;}
+		.graph{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 42vw;
+			z-index: 3;}
+		.about{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 48vw;
+			z-index: 3;}
+		.subheader{color:#F2F2F2;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 300;
+			font-size: 1vw;
+			line-height: 1vw;
+			text-align: left;
+			top: 2vh; left: 70vw;
+			z-index: 3;}
+		.logo{top: 3vh; left: 88vw;
+			width: 10vw;
+			z-index: 30;}
+
+		.category{top: 15vh; left: 91vw;
+			width: 7vw;
+			z-index: 30;}
+		.category:hover{transition: .1s ease; opacity: 0.5;}
+
+
+		section{}
+		.row{/*width: 1500px; height: 440px;*/
+			flex-wrap: wrap; 
+			display: flex;}
+		.marginright0{margin-right: 0vw;}
+		.col-5{width: 18vw; margin: 0vh 0.2vw;}
+		.gap{margin: 1.4vh 1vw; justify-content: center;}
+
+		.data-list-wrap{margin-left: 3vw;
+						margin-right: 3vw;
+						margin-top: 8vh;}
+		.data-list-wrap .legend-text {display: block;
+										color:#F2F2F2;
+										font-family: 'Space Grotesk', sans-serif;
+										font-weight: 300;
+										font-size: 1vw;
+										margin-bottom: -5vh;}
+		.data-list-wrap .data-list-container:before {content: "";
+												    display: block;
+												    width: 95vw;
+												    height: 0.1vh;
+												    top: 0vh;
+												    /*margin: 0vw auto;*/
+												    background: #F2F2F2;}
+		.mb-2, .my-2 {margin-bottom: 2vh!important;}
+		.mt-2, .my-2 {margin-bottom: 1vh!important;}
+		.h3, .text-s, h3 {font-size:2vw;
+							line-height: 10vw;}
+		/*.mt-4, .my-4 {margin-top: 10vw!important;}*/
+		/*.container, .container-fluid, .row{padding-right: 1vw; padding-left: 1vw;}*/
+		.col{flex-basis: 0; flex-grow: 1; max-width: 100%;}
+		.d-md-block{display: block!important;}
+		/*.d-none{display: none!important;}*/
+
+
+		.absolutegraph{position: absolute;
+						top: 0vh; left: 7vw;
+						bottom: 0vh;
+						z-index: 7;}
+		.boxspace{margin: 0vh 0vw;}
+
+		
+		.flex{display: flex;}
+		.fixed{position: fixed;}
+		.relative{position: relative;}
+		.absolute{position:  absolute;}
+		.z1{z-index: 1;}
+		.z100{z-index: 100;}
+		.outer{padding: 0vh 0vw;}
+		.inner{position: absolute;
+	  		bottom: 0vw; margin: 0vh 0vw; width: 18.5vw;}
+
+	  	.cursor div {
+			    display: block;
+			/*     display: none; */
+			    position: fixed;
+			    top: 0;
+			    left: 0;
+			    animation: fadein 1s;
+			    --cursor-colour: #EE5864;
+			    z-index: 100;}
+
+		.cursor .dot {
+			    width:  0.8rem;
+			    height: 0.8rem;
+			    background-color: var(--cursor-colour);
+			    border-radius: 50%;
+			    pointer-events: none;
+			    transform: translate(-50%, -50%);
+			    transition: opacity 0.5s;
+			    transition: width .8s, height .8s;}
+
+		.cursor .circle {
+			    width: 3.5rem;
+			    height: 3.5rem;
+			    background-color: rgba(0,0,0,0);
+			    border: 1px solid var(--cursor-colour);
+			    border-radius: 50%;
+			    pointer-events: none;
+			    transform: translate(-50%, -50%);
+			    transition: opacity 0.2s;
+			    transition: width 0.2s , height 0.2s;}
+
+		div.cursor div span {position: absolute;
+			    top:-0.5em;
+			    left: .6em;
+			    width: 300px;
+
+			    font-size: 30pt;
+			    font-weight: 600;
+			    color: var(--cursor-colour);
+			    
+			    opacity: 0;
+			    transition: opacity 0.5s;
+			    z-index: 100;}
+
+		div.cursor div .visible {opacity: 1;}
+
+		.cursor .hide {opacity: 0;}
+
+		.cursor .dot-hover {background-color: var(--link-color);
+			    width: .6rem;
+			    height: .6rem;
+			    opacity: 0.8;}
+
+		.cursor .expand {width: 6rem;
+			    height: 6rem;}
+
+		.cursor .shrink {width: 2rem;
+			    height: 2rem;}
+
+		.cursor .fill {border: 2px solid var(--primary-color);}
+
+		@keyframes fadein {
+			    0% { opacity: 0; }
+			    25% { opacity: .5; }
+			    100% { opacity: 1; }
+
+
+
+	</style>
+</head>
+<body class="scroll">
+	<div class="cursor">
+        <div class="dot"><span></span></div>
+        <div class="circle"></div>
+    </div>
+	<!--/상단 타이포, 로고-->
+	<section>
+			<div class="exchangerate absolute">
+				<p>Exchange Rate</p>
+				<p>2021-12-13 13:19</p>
+			</div>
+			<a href="graph.html" class="graph absolute z100">
+				<p>Graph</p>
+			</a>
+			<a href="about.html" class="about absolute z100">
+				<p>About</p>
+			</a>
+			<div class="subheader absolute">
+				<p>World Minimum Wage in 2021</p>
+				<p style ="font-family: 'Noto Sans', sans-serif; font-weight: 300;">세계 최저임금 비교</style></p>
+			</div>
+			<a href="index.html" class="logo absolute">
+				<img src="logo.svg">
+			</a>
+	</section>
+	<section>
+		<a href="graph2.html" class="category absolute">
+			<img src="cat1.svg">
+		</a>
+	</section>
+	<!--/About 헤더-->
+	<section>
+		<div class="header">Graph</div>
+	</section>
+	<!--/About-->
+	<section>
+		<div class="data-list-wrap mt-4">
+			<div class="d-block">
+				<span class="data-list-container2 mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h1>Country</h1>
+							<h4>국가</h4>
+						</div>
+						<div class="col">
+							<h1>Continent</h1>
+							<h4>대륙</h4>
+						</div>
+						<div class="col">
+							<h1>Minimum Hourly Wage</h1>
+							<h4>시간당 최저임금</h4>
+						</div>
+						<div class="col">
+							<h1>Convert to Won (₩)</h1>
+							<h4>원으로 변환 (₩)</h4>
+						</div>
+						<div class="col">
+							<h1>Effective Date</h1>
+							<h4>시행일</h4>
+						</div>
+						<div class="col">
+							<h1>Rate to Increase (%) / Amount</h1>
+							<h4>상승률 (%) / 상승액</h4>
+						</div>
+					</div>
+				</span>
+				<span class="data-list-container mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h2 style="font-weight: 400; font-size: 1.6vw; color: #43B9DD">CANBERRA</h2>
+							<h2 style="font-size: 1vw">Commonwealth of Australia</h2>
+							<h2 style="font-size: 1vw">AUS</h2>
+						</div>
+						<div class="col">
+							<h2>Australia</h2>
+						</div>
+						<div class="col">
+							<h2>$20.33</h2>
+						</div>
+						<div class="col">
+							<h2>₩24,034</h2>
+						</div>
+						<div class="col">
+							<h2>2021.7.1.</h2>
+						</div>
+						<div class="col">
+							<h2>2.47%</h2>
+							<h2>¢49 ↑</h2>
+						</div>
+					</div>
+					<div><h3></h3></div>
+				</span>
+				<span class="data-list-container mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h2 style="font-weight: 400; font-size: 1.6vw; color: #F59D33">WASHINGTON, D.C.</h2>
+							<h2 style="font-size: 1vw">United States of America</h2>
+							<h2 style="font-size: 1vw">USA</h2>
+						</div>
+						<div class="col">
+							<h2>North America</h2>
+						</div>
+						<div class="col">
+							<h2>$15</h2>
+						</div>
+						<div class="col">
+							<h2>₩17,761</h2>
+						</div>
+						<div class="col">
+							<h2>2022.3.30.</h2>
+						</div>
+						<div class="col">
+							<h2>37%</h2>
+							<h2>$4.05 ↑</h2>
+						</div>
+					</div>
+					<div><h3></h3></div>
+				</span>
+				<span class="data-list-container mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h2 style="font-weight: 400; font-size: 1.6vw; color: #9A68EB">PARIS</h2>
+							<h2 style="font-size: 1vw">French Republic</h2>
+							<h2 style="font-size: 1vw">FRA</h2>
+						</div>
+						<div class="col">
+							<h2>Europe</h2>
+						</div>
+						<div class="col">
+							<h2>€10.48</h2>
+						</div>
+						<div class="col">
+							<h2>₩13,982</h2>
+						</div>
+						<div class="col">
+							<h2>2021.10.1.</h2>
+						</div>
+						<div class="col">
+							<h2>2.2%</h2>
+							<h2>€0.23 ↑</h2>
+						</div>
+					</div>
+					<div><h3></h3></div>
+				</span>
+				<span class="data-list-container mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h2 style="font-weight: 400; font-size: 1.6vw; color: #9A68EB">LONDON</h2>
+							<h2 style="font-size: 1vw">United Kingdom</h2>
+							<h2 style="font-size: 1vw">GBR</h2>
+						</div>
+						<div class="col">
+							<h2>Europe</h2>
+						</div>
+						<div class="col">
+							<h2>£8.91</h2>
+						</div>
+						<div class="col">
+							<h2>₩13,969</h2>
+						</div>
+						<div class="col">
+							<h2>2021.4.1.</h2>
+						</div>
+						<div class="col">
+							<h2>2.2%</h2>
+							<h2>£0.19 ↑</h2>
+						</div>
+					</div>
+					<div><h3></h3></div>
+				</span>
+				<span class="data-list-container mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h2 style="font-weight: 400; font-size: 1.6vw; color: #9A68EB">BERLIN</h2>
+							<h2 style="font-size: 1vw">Federal Republic of Germany</h2>
+							<h2 style="font-size: 1vw">DEU</h2>
+						</div>
+						<div class="col">
+							<h2>Europe</h2>
+						</div>
+						<div class="col">
+							<h2>€9.6</h2>
+						</div>
+						<div class="col">
+							<h2>₩12,808</h2>
+						</div>
+						<div class="col">
+							<h2>2021.7.1.</h2>
+						</div>
+						<div class="col">
+							<h2>1.05%</h2>
+							<h2>€0.1 ↑</h2>
+						</div>
+					</div>
+					<div><h3></h3></div>
+				</span>
+				<span class="data-list-container mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h2 style="font-weight: 400; font-size: 1.6vw; color: #11A79B">TOKYO</h2>
+							<h2 style="font-size: 1vw">Japan</h2>
+							<h2 style="font-size: 1vw">JPN</h2>
+						</div>
+						<div class="col">
+							<h2>Asia</h2>
+						</div>
+						<div class="col">
+							<h2>¥1,041</h2>
+						</div>
+						<div class="col">
+							<h2>₩10,827</h2>
+						</div>
+						<div class="col">
+							<h2>2021.10.1.</h2>
+						</div>
+						<div class="col">
+							<h2>3.1%</h2>
+							<h2>¥28 ↑</h2>
+						</div>
+					</div>
+					<div><h3></h3></div>
+				</span>
+				<span class="data-list-container mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h2 style="font-weight: 400; font-size: 1.6vw; color: #11A79B">SEOUL</h2>
+							<h2 style="font-size: 1vw">Republic of Korea</h2>
+							<h2 style="font-size: 1vw">KOR</h2>
+						</div>
+						<div class="col">
+							<h2>Asia</h2>
+						</div>
+						<div class="col">
+							<h2>₩8,720</h2>
+						</div>
+						<div class="col">
+							<h2>-</h2>
+						</div>
+						<div class="col">
+							<h2>2021.1.1.</h2>
+						</div>
+						<div class="col">
+							<h2>1.51%</h2>
+							<h2>₩440 ↑</h2>
+						</div>
+					</div>
+					<div><h3></h3></div>
+				</span>
+				<span class="data-list-container mb-2">
+					<div class="row mt-2">
+						<div class="col">
+							<h2 style="font-weight: 400; font-size: 1.6vw; color: #7DC04F">PRETORIA</h2>
+							<h2 style="font-size: 1vw">Republic of South Africa</h2>
+							<h2 style="font-size: 1vw">ZAF</h2>
+						</div>
+						<div class="col">
+							<h2>Africa</h2>
+						</div>
+						<div class="col">
+							<h2>R21.69</h2>
+						</div>
+						<div class="col">
+							<h2>₩1,605</h2>
+						</div>
+						<div class="col">
+							<h2>2021.1.1.</h2>
+						</div>
+						<div class="col">
+							<h2>4.48%</h2>
+							<h2>R0.93 ↑</h2>
+						</div>
+					</div>
+					<div><h3></h3></div>
+				</span>	
+			</div>
+		</div>
+	</section>
+	<footer>COPYRIGHT ©2021 MOON KYEONGSEO</footer>
+	<script type="text/javascript">
+		const cursorDot = document.querySelector(".cursor .dot");
+		const cursorCircle = document.querySelector(".cursor .circle");
+		const cursorText = document.querySelector(".cursor .dot span");
+		var touchDevice = false;
+		var hoverLink = false;
+
+		let currentX = 0, currentY = 0;
+		let aimX = 0, aimY = 0;
+		let speed = 0.15;
+
+		// document.body.classList.add("noCursor");
+		// cursorCircle.classList.remove("hide");
+		// cursorDot.classList.remove("hide");
+
+		const animate = () => {
+		    currentX += (aimX - currentX) * speed;
+		    currentY += (aimY - currentY) * speed;
+
+		    cursorCircle.style.left = currentX + "px";
+		    cursorCircle.style.top = currentY + "px";
+		    requestAnimationFrame(animate);
+		}
+
+		animate();
+
+		document.addEventListener("mousemove", (e) => {
+		    if (!touchDevice) {
+		        cursorDot.style.left = e.clientX + "px";
+		        cursorDot.style.top = e.clientY + "px";
+		    }
+		    if (!hoverLink) {
+		        aimX = e.clientX;
+		        aimY = e.clientY;
+		    }
+		});
+
+		document.addEventListener("touchend", (e) => { 
+		    touchDevice = true;
+		    cursorCircle.remove();
+		    cursorDot.remove();
+		    document.body.classList.remove("noCursor");
+		});
+	</script>
+</body>
+</html>
